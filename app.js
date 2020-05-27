@@ -11,6 +11,7 @@ app.get("/about", function(req, res){
 	res.render("about");
 })
 
-app.listen(1000, function(){
-	console.log("Server has started");
-})
+var port = process.env.PORT || 1000;
+app.listen(port, function () {
+  console.log("Server Has Started!");
+});
